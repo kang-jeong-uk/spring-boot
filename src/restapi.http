@@ -1,0 +1,9 @@
+GET /accounts
+Host: localhost:8080
+Content-Type: application/json
+
+###
+
+GET /accounts/1
+Host: localhost:8080
+Content-Type: application/json
