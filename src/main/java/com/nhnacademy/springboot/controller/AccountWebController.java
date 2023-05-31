@@ -12,7 +12,7 @@ public class AccountWebController {
     @GetMapping("/web/account/{id}")
     public String getAccount(@PathVariable Long id,
                              Model model) {
-        model.addAttribute("account", new Account(id, "1", 1));
+        model.addAttribute("account", new Account(id, "2", 1));
 
         return "account";
     }
