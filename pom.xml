@@ -38,6 +38,14 @@
 			<artifactId>spring-boot-starter-thymeleaf</artifactId>
 		</dependency>
 
+<!--		Todo 1 - configuration metadata를 작성하면 IDE에서 자동완성 기능을 사용할 수 있다.
+			의존성을 설정하면 configuration metadata를 자동생성한다.-->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-configuration-processor</artifactId>
+			<optional>true</optional>
+		</dependency>
+
 		<dependency>
 			<groupId>org.projectlombok</groupId>
 			<artifactId>lombok</artifactId>
@@ -67,6 +75,9 @@
 				</configuration>
 			</plugin>
 		</plugins>
+		<finalName>
+			Account
+		</finalName>
 	</build>
 
 </project>
