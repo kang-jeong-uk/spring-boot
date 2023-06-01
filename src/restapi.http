@@ -7,3 +7,29 @@ Content-Type: application/json
 GET /accounts/1
 Host: localhost:8080
 Content-Type: application/json
+
+###
+
+# curl -X GET http://localhost:8080/actuator/counter
+GET http://localhost:8080/actuator/counter
+
+###
+
+
+
+# curl –X POST -H "Content-Type: application/json" -d'{"delta":100}' http://localhost:8080/actuator/counter
+POST http://localhost:8080/actuator/counter
+Content-Type: application/json
+
+{
+  "delta": 100
+}
+
+###
+
+
+# curl –X DELETE http://localhost:8080/actuator/counter
+DELETE http://localhost:8080/actuator/counter
+
+###
+

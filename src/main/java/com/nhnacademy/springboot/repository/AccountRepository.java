@@ -1,6 +1,6 @@
 package com.nhnacademy.springboot.repository;
 
-import com.nhnacademy.springboot.teacher.Account;
+import com.nhnacademy.springboot.Account.Account;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.Optional;

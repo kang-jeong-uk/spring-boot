@@ -1,7 +1,7 @@
 package com.nhnacademy.springboot.service;
 
 import com.nhnacademy.springboot.repository.AccountRepository;
-import com.nhnacademy.springboot.teacher.Account;
+import com.nhnacademy.springboot.Account.Account;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;

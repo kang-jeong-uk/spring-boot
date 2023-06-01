@@ -1,6 +1,6 @@
 package com.nhnacademy.springboot.controller;
 
-import com.nhnacademy.springboot.teacher.Account;
+import com.nhnacademy.springboot.Account.Account;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;

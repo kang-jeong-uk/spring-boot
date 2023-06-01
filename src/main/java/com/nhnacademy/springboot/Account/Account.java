@@ -1,4 +1,4 @@
-package com.nhnacademy.springboot.teacher;
+package com.nhnacademy.springboot.Account;
 
 
 import lombok.EqualsAndHashCode;

@@ -1,8 +1,10 @@
 package com.nhnacademy.springboot.controller;
 
 import com.nhnacademy.springboot.service.AccountService;
-import com.nhnacademy.springboot.teacher.Account;
+import com.nhnacademy.springboot.Account.Account;
 import lombok.RequiredArgsConstructor;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -13,12 +15,13 @@ public class AccountController {
 
     private final AccountService accountService;
 
-    @GetMapping("/accounts")
+    @GetMapping(value = "/accounts", produces = MediaType.APPLICATION_JSON_VALUE)
     public List<Account> getAccounts() {
         return accountService.getAccounts();
     }
 
     @PostMapping("/accounts")
+    @ResponseStatus(HttpStatus.CREATED)
     public Account createAccount(@RequestBody Account account) {
         return accountService.createAccount(account);
     }

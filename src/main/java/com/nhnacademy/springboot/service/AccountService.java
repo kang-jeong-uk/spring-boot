@@ -1,6 +1,6 @@
 package com.nhnacademy.springboot.service;
 
-import com.nhnacademy.springboot.teacher.Account;
+import com.nhnacademy.springboot.Account.Account;
 
 import java.util.List;
 
